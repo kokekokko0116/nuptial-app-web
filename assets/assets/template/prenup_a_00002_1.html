@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayumi & David - NuptialAgree</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Cormorant+SC&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content {
+            width: 210mm;
+            height: 297mm;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10mm;
+            box-sizing: border-box;
+        }
+        .images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .main-image {
+            width: 100%;
+            max-width: 170mm;
+            object-fit: contain;
+            margin-bottom: 5mm;
+        }
+        .small-images {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 170mm;
+        }
+        .small-image {
+            width: 32%;
+            object-fit: cover;
+        }
+        .text {
+            text-align: center;
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 25%;
+        }
+        h1 {
+            font-family: 'Oooh Baby', cursive;
+            font-size: 40pt;
+            font-weight: 400;
+            margin: 0;
+            padding-top: 20mm; /* Sayumi & Davidを下げるための調整 */
+        }
+        h2 {
+            font-family: 'Cormorant SC', serif;
+            font-size: 16pt;
+            font-weight: normal;
+            margin: 0;
+            margin-top: auto;
+        }
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="images">
+        <img src="img/img_prenup_1.png" alt="Bride and groom walking in a forest" class="main-image">
+        <div class="small-images">
+            <img src="img/img_prenup_2.png" alt="Bride holding a bouquet" class="small-image">
+            <img src="img/img_prenup_3.png" alt="Love balloon" class="small-image">
+            <img src="img/img_prenup_4.png" alt="Bride by the window" class="small-image">
+        </div>
+    </div>
+    <div class="text">
+        <h1>Sayumi & David</h1>
+        <h2>NuptialAgree</h2>
+    </div>
+</div>
+</body>
+</html>
